@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        background-image: linear-gradient(rgba(0, 255, 0, 0), rgb(33, 6, 29));
+      }
+      h2,
+      p {
+        color: blanchedalmond;
+        font-size: 20px;
+        text-align: center;
+      }
+      h1 {
+        box-sizing: border-box;
+        border: 2px solid white;
+        padding-left: 50px;
+        padding-top: 10px;
+        margin: 0 auto;
+        width: 400px;
+        height: 60px;
+        display: flex;
+        color: blanchedalmond;
+        font-size: 35px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-top: 300px;
+        border-bottom: 300px;
+        border-radius: 5%;
+      }
+      button {
+        box-sizing: border-box;
+        border-style: none;
+        background-color: rgb(10, 77, 116);
+        width: 500px;
+        height: 100px;
+        display: flex;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        padding: 20px;
+        padding-left: 110px;
+      }
+      button:hover {
+        background-color: pink;
+        opacity: 0, 2;
+        width: 600px;
+        height: 150px;
+      }
+      span {
+        font-size: 30px;
+        color: white;
+      }
+      body {
+        text-align: center;
+      }
+      .divider {
+        width: 600px;
+        height: 2px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="divider">
+          <h1>Put On A Face Mask</h1>
+          <h2>The Natural Facial Mask</h2>
+          <hr />
+          <!--line above image-->
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/965/original/pexels-angela-roma-7479817.jpg?1688913788"
+          />
+          <hr />
+          <!--line below image-->
+          <a href="https://www.stylecraze.com/articles/masks-for-glowing-skin/">
+            The best face mask</a
+          ><br />
+          <p>
+            <span> <em>Natural face masks</em></span
+            >: nothing so amazing as starting a new day at work with a glowing
+            healthy skin, Yes ! ,they are the best from stress relieving to
+            making you feel alive. But instead of spending lots of money at the
+            beauty spa to get that wonderful feeling and stunning face glowing
+            you can get the feeling everyday .Look no further than your home
+            cupboard .In other words you can get straight into making that
+            facial mask by yourself,you will be surprised at what you can even
+            use , imagine using fruits and spices<strong>
+              (cinnamon,tumeric).</strong
+            >The simplest ingredients like yoghurt boosts exfoliating properties
+            while honey is the best when it comes to busting spot causing
+            bacteria and cacao powder a great glow booster ,just to mention a
+            few.So whether that Kate Spade handbag left you with nothing to your
+            name or you simply prefer working it out in the kitchen,here are the
+            best spa worthy home made face masks to whip out right now .Take a
+            look at our best recipes on what you need to make the perfect face
+            masks .<span><em>All the ingredients are 100% Natural</em></span>
+          </p>
+        </div>
+        <br /><br /><br />
+        <button>👉Order Here</button>
+      </section>
+    </main>
+    <script>
+      function buyMask() {
+        let name = prompt("What is your name?");
+        let myEmail = prompt("what is your email?");
+        alert(
+          "Thank you" +
+            ", " +
+            name +
+            " we will be in touch at " +
+            myEmail +
+            ", "
+        );
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", buyMask);
+    </script>
+    <br />
+    <p>This web page was built by <strong> Regayi Opulence Mlambi</strong></p>
+  </body>
+</html>
